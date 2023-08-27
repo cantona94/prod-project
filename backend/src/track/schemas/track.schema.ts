@@ -25,7 +25,7 @@ export class Track {
   audio: string;
 
   @Prop({ type: [{ type: ObjectId, ref: 'comment' }] })
-  comment: Comment[];
+  comments: Comment[];
 }
 
 export const TrackSchema = SchemaFactory.createForClass(Track);
